@@ -23,14 +23,14 @@ public class MuevePersonaje : MonoBehaviour
 		{
 			GetComponent<Rigidbody2D>().velocity = new Vector2(velocidad, GetComponent<Rigidbody2D>().velocity.y);
 		}
-		animator.SetFloat("VelX", GetComponent<Rigidbody2D>().velocity.x);
+		animator.SetFloat("velocidad", GetComponent<Rigidbody2D>().velocity.x);
 
 		
 		if (PruebaPiso.saltando)
 		{
 			dobleSalto = false;
 		}
-		animator.SetBool("isGrounded", !PruebaPiso.saltando);
+		animator.SetBool("saltando", !PruebaPiso.saltando);
 
 	}
 
