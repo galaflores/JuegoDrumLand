@@ -43,11 +43,11 @@ public class HUD : MonoBehaviour
         }
     }
 
-    /*public void ActualizarMonedas()
+    public void ActualizarPuntos()
     {
-      int monedas = SaludPersonaje.instance.monedas;
-      txtMonedas.text = monedas.ToString();
-    }*/
+        int puntos = SaludPersonaje.instance.puntos;
+        txtMonedas.text = puntos.ToString();
+    }
 
 
 }

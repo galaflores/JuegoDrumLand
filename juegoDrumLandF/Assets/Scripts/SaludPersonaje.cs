@@ -5,6 +5,7 @@ using UnityEngine;
 public class SaludPersonaje : MonoBehaviour
 {
     public int vidas = 3;
+    public int puntos = 0;
 
     public static SaludPersonaje instance;
     // Start is called before the first frame update
@@ -13,5 +14,9 @@ public class SaludPersonaje : MonoBehaviour
         instance = this;
     }
 
-    
+    private string GetDebuggerDisplay()
+    {
+        return ToString();
+    }
+
 }
