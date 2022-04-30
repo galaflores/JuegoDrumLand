@@ -4,33 +4,36 @@ using UnityEngine;
 
 public class notaMov : MonoBehaviour
 {
+    private BoxCollider2D boxCollider;
     private Rigidbody2D rb;
-    private Animator animator;
 
+    private float width;
 
-    private SpriteRenderer sprRenderer;
-    //velocidad
-    public float velocidadX = 0;
+    private float speed;
+
     // Start is called before the first frame update
     void Start()
     {
+        boxCollider = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        sprRenderer = GetComponent<SpriteRenderer>();
+
+        width = boxCollider.size.x;
+        speed = 5;
+        rb.velocity = new Vector2(speed, 0);
+
     }
 
-    private void FixedUpdate()
+    // Update is called once per frame
+    void Update()
     {
-        float movHorizontal = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(-movHorizontal * velocidadX, rb.velocity.y);
-
-        //Animaci?n
-        float velocidad = Mathf.Abs(rb.velocity.x);
-        animator.SetFloat("velocidad", velocidad);
-        //Direcci?n
-        sprRenderer.flipX = rb.velocity.x < 0;
-
-        animator.SetBool("saltando", !PruebaPiso.saltando);
+        if (transform.position.x < (-Screen.width / 100 / 2) - width / 2)
+        {
+            Vector2 vec = new Vector2(Screen.width / 100 / 2 + width / 2, transform.position.y);
+            transform.position = vec;
+        }
 
     }
+
+
+ 
 }
