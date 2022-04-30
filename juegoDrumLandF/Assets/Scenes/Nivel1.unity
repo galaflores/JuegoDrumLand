@@ -771,7 +771,7 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1256,13 +1256,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1376114679}
     m_Modifications:
+    - target: {fileID: 6970992654676306722, guid: 41055d86fcb314b438f01b62df2a1b0e, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 46891889}
     - target: {fileID: 6970992654676306749, guid: 41055d86fcb314b438f01b62df2a1b0e, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6970992654676306749, guid: 41055d86fcb314b438f01b62df2a1b0e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.56
+      value: 8.54
       objectReference: {fileID: 0}
     - target: {fileID: 6970992654676306749, guid: 41055d86fcb314b438f01b62df2a1b0e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16159,7 +16163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6970992654676306749, guid: 41055d86fcb314b438f01b62df2a1b0e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.756807
+      value: 3.12
       objectReference: {fileID: 0}
     - target: {fileID: 6970992654676306749, guid: 41055d86fcb314b438f01b62df2a1b0e, type: 3}
       propertyPath: m_LocalPosition.y
