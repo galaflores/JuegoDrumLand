@@ -7,10 +7,24 @@ using UnityEngine;
 public class checaPunto : MonoBehaviour
 {
 
+    public static checaPunto instance;
+
     [SerializeField]
     public GameObject Player;
 
+    [SerializeField]
+    private AudioSource efectoPunto;
+
+    [SerializeField]
+    public GameObject ojo;
+
+
     public static bool toca = false;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,20 +52,25 @@ public class checaPunto : MonoBehaviour
             GetComponent<SpriteRenderer>().enabled = false;
             Destroy(gameObject);
 
-            SaludPersonaje.instance.puntos =+1;
+            SaludPersonaje.instance.puntos ++;
             HUD.instance.ActualizarPuntos();
+            
             toca = false;
+
+            Destroy(ojo);
+            efectoPunto.Play();
         }
-        else if (Input.GetKeyDown(KeyCode.L) && !toca)
+        /*else if (Input.GetKeyDown(KeyCode.L) && !toca)
         {
-            //Descontar puntos
             SaludPersonaje.instance.vidas--;
+            HUD.instance.ActualizarVidas();
+            //Descontar puntos
             if (SaludPersonaje.instance.vidas == 0)
             {
                 Destroy(Player, 0.1f);
             }
             
-        }
+        }*/
     }
 
     

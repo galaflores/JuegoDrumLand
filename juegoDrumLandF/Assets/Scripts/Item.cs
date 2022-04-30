@@ -17,7 +17,7 @@ public class Item : MonoBehaviour
 
             Destroy(gameObject, 0.3f); // Destruye la MONEDA
             //contar la moneda recolectada
-            SaludPersonaje.instance.puntos++;
+            //SaludPersonaje.instance.puntos++;
             // Actualizar el texto del contador
             HUD.instance.ActualizarPuntos();
 

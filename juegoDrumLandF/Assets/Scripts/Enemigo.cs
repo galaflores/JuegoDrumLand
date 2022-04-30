@@ -17,6 +17,12 @@ public class Enemigo : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            // Hace visible la explosi�n
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            // oculta al OJO
+            GetComponent<SpriteRenderer>().enabled = false;
+
+            Destroy(gameObject, 0.3f); // Destruye el OJO
             SaludPersonaje.instance.vidas--;
             HUD.instance.ActualizarVidas();
             if (SaludPersonaje.instance.vidas == 0)
