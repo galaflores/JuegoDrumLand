@@ -18,7 +18,7 @@ public class notaMov : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         width = boxCollider.size.x;
-        speed = -Random.Range(1.5f, 3);
+        speed = 5;
         rb.velocity = new Vector2(speed, 0);
 
     }
@@ -33,4 +33,7 @@ public class notaMov : MonoBehaviour
         }
 
     }
+
+
+ 
 }

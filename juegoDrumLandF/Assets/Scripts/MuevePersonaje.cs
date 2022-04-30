@@ -12,7 +12,8 @@ public class MuevePersonaje : MonoBehaviour
 	public float velocidad = 1f;
 	public float velocidadY = 10f;
 
-	void Awake()
+
+    void Awake()
 	{
 		animator = GetComponent<Animator>();
 	}
@@ -57,5 +58,6 @@ public class MuevePersonaje : MonoBehaviour
 				corriendo = true;
 			}
 		}
+		
 	}
 }

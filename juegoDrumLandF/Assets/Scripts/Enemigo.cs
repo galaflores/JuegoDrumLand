@@ -28,4 +28,12 @@ public class Enemigo : MonoBehaviour
 
         }
     }
+    /*
+		if (Input.GetButtonDown("Fire2"))
+		{
+			GameObject nuevoProyectil = Instantiate(proyectil);
+			nuevoProyectil.transform.position = gameObject.transform.position;
+			nuevoProyectil.SetActive(true);
+		}
+*/
 }
