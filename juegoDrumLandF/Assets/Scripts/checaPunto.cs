@@ -11,8 +11,6 @@ public class checaPunto : MonoBehaviour
 
     public static checaPunto instance;
 
-    [SerializeField]
-    public GameObject Player;
 
     [SerializeField]
     private AudioSource efectoPunto;
