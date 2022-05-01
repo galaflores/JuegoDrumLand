@@ -59,7 +59,7 @@ public class checaPunto : MonoBehaviour
 
             Destroy(ojo);
             efectoPunto.Play();
-        }
+        } 
         /*else if (Input.GetKeyDown(KeyCode.L) && !toca)
         {
             SaludPersonaje.instance.vidas--;

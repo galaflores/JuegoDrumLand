@@ -22,12 +22,12 @@ public class Enemigo : MonoBehaviour
             // oculta al OJO
             GetComponent<SpriteRenderer>().enabled = false;
 
-            Destroy(gameObject, 0.3f); // Destruye el OJO
+            Destroy(gameObject); // Destruye el OJO
             SaludPersonaje.instance.vidas--;
             HUD.instance.ActualizarVidas();
             if (SaludPersonaje.instance.vidas == 0)
             {
-                Destroy(other.gameObject, 2f);
+                Destroy(other.gameObject);
                 efectoMuerte.Play();
             }
 
