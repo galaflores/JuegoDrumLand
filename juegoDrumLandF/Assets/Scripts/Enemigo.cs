@@ -13,6 +13,8 @@ public class Enemigo : MonoBehaviour
     [SerializeField]
     private AudioSource efectoMuerte;
 
+    public GameObject EliminaNota;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -23,6 +25,8 @@ public class Enemigo : MonoBehaviour
             GetComponent<SpriteRenderer>().enabled = false;
 
             Destroy(gameObject); // Destruye el OJO
+            Destroy(EliminaNota);
+
             SaludPersonaje.instance.vidas--;
             HUD.instance.ActualizarVidas();
             if (SaludPersonaje.instance.vidas == 0)

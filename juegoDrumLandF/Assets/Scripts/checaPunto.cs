@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class checaPunto : MonoBehaviour
 {
+  
+    
 
     public static checaPunto instance;
 

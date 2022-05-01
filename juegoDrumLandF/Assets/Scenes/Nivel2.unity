@@ -571,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   efectoMuerte: {fileID: 97288254}
+  EliminaNota: {fileID: 0}
 --- !u!82 &97288254
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1292,6 +1293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   efectoMuerte: {fileID: 209877320}
+  EliminaNota: {fileID: 601078967}
 --- !u!50 &209877322
 Rigidbody2D:
   serializedVersion: 4
@@ -3281,6 +3283,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &601078967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6970992654676306750, guid: 41055d86fcb314b438f01b62df2a1b0e, type: 3}
+  m_PrefabInstance: {fileID: 1805151046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &608338973
 GameObject:
   m_ObjectHideFlags: 0
@@ -76955,6 +76962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   efectoMuerte: {fileID: 1081077076}
+  EliminaNota: {fileID: 0}
 --- !u!82 &1081077076
 AudioSource:
   m_ObjectHideFlags: 0
