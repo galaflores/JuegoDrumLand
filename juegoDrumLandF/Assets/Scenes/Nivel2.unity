@@ -5211,7 +5211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: 575
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -83612,7 +83612,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 998404781}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 3247453019fdba14d8c390a8e89f07ef, type: 2}
+  m_Material: {fileID: 6200000, guid: 4be5ffebd67290a4db4823cda5930ced, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
