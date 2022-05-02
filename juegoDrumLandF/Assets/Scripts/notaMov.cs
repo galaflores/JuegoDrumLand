@@ -4,36 +4,70 @@ using UnityEngine;
 
 public class notaMov : MonoBehaviour
 {
-    private BoxCollider2D boxCollider;
     private Rigidbody2D rb;
+    private SpriteRenderer sprtRenderer;
 
-    private float width;
+    public float rapidez = 1;
 
-    private float speed;
+    private bool tocar = false;
+
+    private float halfWidth;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
+        sprtRenderer = GetComponent<SpriteRenderer>();
 
-        width = boxCollider.size.x;
-        speed = 5;
-        rb.velocity = new Vector2(speed, 0);
-
+        rb.velocity = new Vector2(-rapidez, 0);
+        halfWidth = sprtRenderer.bounds.size.x / 2;
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < (-Screen.width / 100 / 2) - width / 2)
+        if (tocar && Input.GetKeyDown(KeyCode.L))
         {
-            Vector2 vec = new Vector2(Screen.width / 100 / 2 + width / 2, transform.position.y);
-            transform.position = vec;
+            tocar = false;
+            //NoToca.instance.toca = false;
+            DestruirProyectil(1);
+        }
+        else
+        {
+            if (gameObject.transform.position.x + halfWidth < -Screen.width / 200)
+            {
+                DestruirProyectil(-1);
+            }
+        }
+
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("barra"))
+        {
+            tocar = true;
+            //NoToca.instance.toca = true;
         }
 
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("barra"))
+        {
+            tocar = false;
+            //NoToca.instance.toca = false;
+        }
 
- 
+    }
+
+    private void DestruirProyectil(int p)
+    {
+        Destroy(gameObject);
+        HUD.instance.ActualizarP(p);
+    }
 }

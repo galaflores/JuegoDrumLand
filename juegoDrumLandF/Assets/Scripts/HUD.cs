@@ -48,5 +48,9 @@ public class HUD : MonoBehaviour
         txtMonedas.text = puntos.ToString();
     }
 
-
+    public void ActualizarP(int p)
+    {
+        SaludPersonaje.instance.puntos += p;
+        txtMonedas.text = SaludPersonaje.instance.puntos.ToString();
+    }
 }

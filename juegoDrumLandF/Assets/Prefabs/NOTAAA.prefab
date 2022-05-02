@@ -120,9 +120,10 @@ GameObject:
   - component: {fileID: 6970992654676306723}
   - component: {fileID: 6970992654676306748}
   - component: {fileID: -5730843607710903277}
+  - component: {fileID: -5147694279666502601}
   m_Layer: 0
   m_Name: NOTAAA
-  m_TagString: Untagged
+  m_TagString: nota1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,13 +223,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6970992654676306750}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7121d387c63c5429f8c386c788e53b8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  efectoPunto: {fileID: -5730843607710903277}
   ojo: {fileID: 0}
 --- !u!61 &6970992654676306723
 BoxCollider2D:
@@ -373,3 +372,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5147694279666502601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970992654676306750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0ff16891da341e98d2bfdedfa26a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rapidez: 0

@@ -46,7 +46,7 @@ public class MuevePersonaje : MonoBehaviour
 	void Update()
 	{
 		velX = GetComponent<Rigidbody2D>().velocity.x;
-		print(velX);
+
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			if (corriendo)
@@ -85,6 +85,7 @@ public class MuevePersonaje : MonoBehaviour
 			velocidad = 0f;
 			//Destroy(eliminaBarra);
 			eliminaBarra.gameObject.SetActive(false);
+			Destroy(GameObject.FindWithTag("nota1"));
 		}
 	}
 }

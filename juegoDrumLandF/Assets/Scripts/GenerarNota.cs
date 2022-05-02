@@ -15,16 +15,22 @@ public class GenerarNota : MonoBehaviour
 
     private IEnumerator GenerarP()
     {
-        while (MuevePersonaje.instance.velX > 0.01)
+        //while (MuevePersonaje.instance.velX > 0.1)
+        while(true)
         {
-            yield return new WaitForSeconds(0.3f);
-            if (Random.value < 0.5f)
+            if (MuevePersonaje.instance.velX > 0.1)
             {
-                GameObject nuevoProyectil = Instantiate(nota);
-                nuevoProyectil.transform.position = gameObject.transform.position;
-                nuevoProyectil.SetActive(true);
-            }
+                yield return new WaitForSeconds(0.3f);
 
+                if (Random.value < 0.5f)
+                {
+                    GameObject nuevoProyectil = Instantiate(nota);
+                    nuevoProyectil.transform.position = gameObject.transform.position;
+                    nuevoProyectil.SetActive(true);
+                }
+            }
+           
+          
         }
 
     }
