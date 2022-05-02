@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class HUD : MonoBehaviour
+public class ActualizaCorazones : MonoBehaviour
 {
-    //3 im√°genes (corazones)
+    //3 im·genes (corazones)
     [SerializeField] //para accederlo desde unity
     private Image Corazon1;
     [SerializeField]
@@ -14,20 +14,16 @@ public class HUD : MonoBehaviour
     [SerializeField]
     private Image Corazon3;
 
-    //contador de monedas
-    [SerializeField]
-    private TextMeshProUGUI txtMonedas;
-
-    public static HUD instance;
+    public static ActualizaCorazones instance;
 
     private void Awake()
     {
         instance = this;
     }
 
-    public void ActualizarVidas()
+    public void ActualizaVidasAguila()
     {
-        int vidas = SaludPersonaje.instance.vidas;
+        int vidas = SaludAguila.instance.vidas;
         switch (vidas)
         {
             case 2:
@@ -41,12 +37,5 @@ public class HUD : MonoBehaviour
                 break;
         }
     }
-
-    public void ActualizarPuntos()
-    {
-        int puntos = SaludPersonaje.instance.puntos;
-        txtMonedas.text = puntos.ToString();
-    }
-
-
 }
+
