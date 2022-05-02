@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MuevePersonaje : MonoBehaviour
 {
@@ -12,8 +13,11 @@ public class MuevePersonaje : MonoBehaviour
 	public float velocidad = 1f;
 	public float velocidadY = 10f;
 
+	public GameObject proyectil;
 
-    void Awake()
+	public GameObject eliminaBarra;
+
+	void Awake()
 	{
 		animator = GetComponent<Animator>();
 	}
@@ -58,6 +62,24 @@ public class MuevePersonaje : MonoBehaviour
 				corriendo = true;
 			}
 		}
-		
+
+		//Disparar
+		if (Input.GetKeyDown(KeyCode.D))
+		{
+			GameObject nuevoProyectil = Instantiate(proyectil);
+			nuevoProyectil.transform.position = gameObject.transform.position;
+			nuevoProyectil.SetActive(true);
+		}
+
+	}
+
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.gameObject.CompareTag("Circulo"))
+		{
+			velocidad = 0f;
+			//Destroy(eliminaBarra);
+			eliminaBarra.gameObject.SetActive(false);
+		}
 	}
 }
