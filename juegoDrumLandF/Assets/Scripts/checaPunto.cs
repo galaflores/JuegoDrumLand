@@ -7,15 +7,9 @@ using UnityEngine;
 public class checaPunto : MonoBehaviour
 {
   
-    
-
     public static checaPunto instance;
-
-
-   // [SerializeField]
-   // private AudioSource efectoPunto;
-
-    //[SerializeField]
+    
+    
     public GameObject ojo;
 
 
@@ -30,7 +24,7 @@ public class checaPunto : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         toca = true;
-
+      
     }
 
     // Update is called once per frame
@@ -40,23 +34,33 @@ public class checaPunto : MonoBehaviour
 
     }
 
+
+
     // Update is called once per frame
-    void Update()
+     void Update()
     {
         if (Input.GetKeyDown(KeyCode.L) && toca)
         {
+            toca = false;
             // Hace visible la explosi�n
             //gameObject.transform.GetChild(0).gameObject.SetActive(true);
             // oculta la nota
             //GetComponent<SpriteRenderer>().enabled = false;
-            Destroy(gameObject);
+            //Destroy(ojo);
 
-            SaludPersonaje.instance.puntos ++;
+
+            SaludPersonaje.instance.puntos += 10;
             HUD.instance.ActualizarPuntos();
-            
-            toca = false;
+            //Destroy(gameObject, 0.01f);
+            //print("nota des" + gameObject.name);
 
+            Destroy(gameObject);
             Destroy(ojo);
+        }
+
+            
+
+         
             //efectoPunto.Play();
         } 
         /*else if (Input.GetKeyDown(KeyCode.L) && !toca)
@@ -74,4 +78,4 @@ public class checaPunto : MonoBehaviour
 
     
 
-}
+
