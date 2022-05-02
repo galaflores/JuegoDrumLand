@@ -12,10 +12,10 @@ public class checaPunto : MonoBehaviour
     public static checaPunto instance;
 
 
-    [SerializeField]
-    private AudioSource efectoPunto;
+   // [SerializeField]
+   // private AudioSource efectoPunto;
 
-    [SerializeField]
+    //[SerializeField]
     public GameObject ojo;
 
 
@@ -43,13 +43,12 @@ public class checaPunto : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.L) && toca)
         {
             // Hace visible la explosi�n
-            gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            //gameObject.transform.GetChild(0).gameObject.SetActive(true);
             // oculta la nota
-            GetComponent<SpriteRenderer>().enabled = false;
+            //GetComponent<SpriteRenderer>().enabled = false;
             Destroy(gameObject);
 
             SaludPersonaje.instance.puntos ++;
@@ -58,7 +57,7 @@ public class checaPunto : MonoBehaviour
             toca = false;
 
             Destroy(ojo);
-            efectoPunto.Play();
+            //efectoPunto.Play();
         } 
         /*else if (Input.GetKeyDown(KeyCode.L) && !toca)
         {
