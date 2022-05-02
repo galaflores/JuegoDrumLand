@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class MuevePersonaje : MonoBehaviour
 {
+	public static MuevePersonaje instance;
+	public float velX;
 
 	private Animator animator;
 	public float fuerzaSalto = 100f;
@@ -19,6 +21,7 @@ public class MuevePersonaje : MonoBehaviour
 
 	void Awake()
 	{
+		instance = this;
 		animator = GetComponent<Animator>();
 	}
 
@@ -42,6 +45,8 @@ public class MuevePersonaje : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		velX = GetComponent<Rigidbody2D>().velocity.x;
+		print(velX);
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			if (corriendo)
