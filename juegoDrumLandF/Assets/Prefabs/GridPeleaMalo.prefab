@@ -321,54 +321,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &3508600417957366168
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3508600417957366169}
-  - component: {fileID: 3508600417957366170}
-  m_Layer: 0
-  m_Name: Checador
-  m_TagString: Circulo
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3508600417957366169
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3508600417957366168}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 583.91, y: -3.1, z: -8.312045}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3508600417846243116}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &3508600417957366170
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3508600417957366168}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!1 &3508600417999783992
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +593,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidas: 3
   puntos: 1
+--- !u!1001 &2240609478762079019
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3508600417846243116}
+    m_Modifications:
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 583.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.312045
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434332329271519923, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+      propertyPath: m_Name
+      value: Checador
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+--- !u!4 &3508600417957366169 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3434332329271519922, guid: 514958bf0844f4d03820151e526d9947, type: 3}
+  m_PrefabInstance: {fileID: 2240609478762079019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7381925047457355490
 PrefabInstance:
   m_ObjectHideFlags: 0
