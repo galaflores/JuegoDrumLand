@@ -42,7 +42,8 @@ public class GenerarEnemNots: MonoBehaviour
                 // Generar nota
                 GameObject nuevaNota = Instantiate(nota);
                 nuevaNota.transform.parent = nuevoBloque.transform;
-                nuevaNota.transform.position = gameObject.transform.position + new Vector3(0, Random.Range(-0.2f, 0.2f), 0);
+                nuevaNota.transform.position = new Vector3(nuevoBloque.transform.position.x, nuevoBloque.transform.position.y, -1);
+                nuevaNota.transform.position +=  new Vector3(0, Random.Range(-0.2f, 0.2f), 0);
                 nuevaNota.SetActive(true);
 
                 // Generar enemigo
@@ -66,7 +67,8 @@ public class GenerarEnemNots: MonoBehaviour
                 }
 
                 nuevoEnemigo.transform.parent = nuevoBloque.transform;
-                nuevoEnemigo.transform.position = gameObject.transform.position + new Vector3(0, -Random.Range(2f, 6f), 0);
+                nuevoEnemigo.transform.position = new Vector3(nuevoBloque.transform.position.x, nuevoBloque.transform.position.y, -1);
+                nuevoEnemigo.transform.position += new Vector3(0, -Random.Range(2f, 6f), 0);
                 nuevoEnemigo.SetActive(true);
             }
         }
