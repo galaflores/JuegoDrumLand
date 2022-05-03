@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8281165850684857287}
   - component: {fileID: 8281165850684857291}
   - component: {fileID: 8281165850684857290}
+  - component: {fileID: 3114222661332749158}
+  - component: {fileID: 5135322766045837131}
   m_Layer: 0
   m_Name: Ajolote
   m_TagString: Untagged
@@ -154,3 +156,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &3114222661332749158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8281165850684857286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396efecb74b59824db95fa31bdd9b5de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MuestraGANAS: {fileID: 0}
+--- !u!114 &5135322766045837131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8281165850684857286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396efecb74b59824db95fa31bdd9b5de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MuestraGANAS: {fileID: 0}
