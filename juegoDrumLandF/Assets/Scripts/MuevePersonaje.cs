@@ -18,6 +18,7 @@ public class MuevePersonaje : MonoBehaviour
 	public GameObject proyectil;
 
 	public GameObject eliminaBarra;
+	public GameObject MuestaCanvas;
 
 	void Awake()
 	{
@@ -85,6 +86,8 @@ public class MuevePersonaje : MonoBehaviour
 			velocidad = 0f;
 			//Destroy(eliminaBarra);
 			eliminaBarra.gameObject.SetActive(false);
+			MuestaCanvas.gameObject.SetActive(true);
+
 			Destroy(GameObject.FindWithTag("nota1"));
 		}
 	}

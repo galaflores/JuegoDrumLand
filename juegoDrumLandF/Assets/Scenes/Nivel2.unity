@@ -5194,6 +5194,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1144742782720434845}
     - target: {fileID: 1123127424646417489, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
+      propertyPath: MuestaCanvas
+      value: 
+      objectReference: {fileID: 3508600417854371448}
+    - target: {fileID: 1123127424646417489, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: eliminaBarra
       value: 
       objectReference: {fileID: 1019626282}
@@ -5211,7 +5215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 575
+      value: 571
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -124351,6 +124355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3508600417738963475, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3508600417846243106, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
       propertyPath: m_Name
       value: GridPeleaMalo
