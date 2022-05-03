@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: b54164379cbd29340af59700ef77fd3f
+  - enabled: 1
+    path: Assets/Scenes/SeleccionaNivel.unity
+    guid: d5431f39e0b1056449ffeb7d0a78fa05
   m_configObjects: {}
