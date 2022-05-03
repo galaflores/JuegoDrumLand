@@ -5247,6 +5247,10 @@ PrefabInstance:
       propertyPath: eliminaBarra
       value: 
       objectReference: {fileID: 1019626282}
+    - target: {fileID: 1123127424646417489, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
+      propertyPath: MuestraGANASTE
+      value: 
+      objectReference: {fileID: 1385674059}
     - target: {fileID: 1123127424646417490, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_Name
       value: ranaNinja
@@ -5261,7 +5265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.72
+      value: 573.77
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -124629,9 +124633,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 192003864}
+    - target: {fileID: 7100306332846056094, guid: bd32f66dd47ccc541861540b6036618c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7100306334439045931, guid: bd32f66dd47ccc541861540b6036618c, type: 3}
       propertyPath: m_Name
       value: GridMenuGanaste
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100306334439045931, guid: bd32f66dd47ccc541861540b6036618c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7100306334439045933, guid: bd32f66dd47ccc541861540b6036618c, type: 3}
       propertyPath: m_RootOrder

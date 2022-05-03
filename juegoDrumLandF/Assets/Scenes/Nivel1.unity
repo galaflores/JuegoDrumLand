@@ -336,6 +336,7 @@ MonoBehaviour:
   enemigo2: {fileID: 1039041083631975014, guid: d58e567527c444ea8a9f2c7b9199d9a6, type: 3}
   enemigo3: {fileID: 862613950930983522, guid: 4738b576bbb6c4776910d4036c84f5d8, type: 3}
   enemigo4: {fileID: 3426070780310640674, guid: 136212d09749646ce944f1493e203ca8, type: 3}
+  velocidad: 0
 --- !u!1 &114711395
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7100306332846056094, guid: bd32f66dd47ccc541861540b6036618c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7100306334439045931, guid: bd32f66dd47ccc541861540b6036618c, type: 3}
       propertyPath: m_Name
