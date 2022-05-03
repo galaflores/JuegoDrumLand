@@ -18,8 +18,8 @@ public class GenerarNota : MonoBehaviour
         //while (MuevePersonaje.instance.velX > 0.1)
         while(true)
         {
-            if (MuevePersonaje.instance.velX > 0.1)
-            {
+            //if (MuevePersonaje.instance.velX > 0.1)
+            //{
                 yield return new WaitForSeconds(0.3f);
 
                 if (Random.value < 0.5f)
@@ -28,7 +28,7 @@ public class GenerarNota : MonoBehaviour
                     nuevoProyectil.transform.position = gameObject.transform.position;
                     nuevoProyectil.SetActive(true);
                 }
-            }
+            //}
            
           
         }
