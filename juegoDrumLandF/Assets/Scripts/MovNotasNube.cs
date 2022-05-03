@@ -26,6 +26,7 @@ public class MovNotasNube : MonoBehaviour
         {
             tocar = false;
             //NoToca.instance.toca = false;
+
             DestruirProyectil(1);
         }
         else
@@ -61,7 +62,12 @@ public class MovNotasNube : MonoBehaviour
 
     private void DestruirProyectil(int p)
     {
-        Destroy(transform.parent.gameObject);
+        // Hace visible la explosi�n
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        // oculta la nota
+        GetComponent<SpriteRenderer>().enabled = false;
+
+        Destroy(transform.parent.gameObject, 0.3f);
         HUD.instance.ActualizarP(p);
     }
 }

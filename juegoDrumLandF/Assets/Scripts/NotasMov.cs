@@ -6,7 +6,7 @@ public class NotasMov: MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sprtRenderer;
-
+  
     public float rapidez = 0;
 
     private bool tocar = false;
@@ -19,6 +19,7 @@ public class NotasMov: MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sprtRenderer = GetComponent<SpriteRenderer>();
+    
 
         rb.velocity = new Vector2(-rapidez, 0);
         halfWidth = sprtRenderer.bounds.size.x / 2;
@@ -67,7 +68,13 @@ public class NotasMov: MonoBehaviour
 
     private void DestruirProyectil(int p)
     {
-        Destroy(transform.parent.gameObject);
+        // Hace visible la explosi�n
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        // oculta la moneda
+        sprtRenderer.enabled = false;
+        
+   
+        Destroy(transform.parent.gameObject, 0.3f);
         HUD.instance.ActualizarP(p);
     }
 }
