@@ -29,7 +29,7 @@ public class GenerarEnemNots: MonoBehaviour
         {
             yield return new WaitForSeconds(0.3f);
 
-            if (Random.value < 0.5f && MuevePersonajeNube.instance.velX > 0.1)
+            if (Random.value < 0.5f && MuevePersonaje.instance.velX > 0.1)
             {
                 // Generar bloque
                 GameObject nuevoBloque = Instantiate(bloque);

@@ -96858,6 +96858,7 @@ MonoBehaviour:
   enemigo2: {fileID: 1039041083631975014, guid: d58e567527c444ea8a9f2c7b9199d9a6, type: 3}
   enemigo3: {fileID: 862613950930983522, guid: 4738b576bbb6c4776910d4036c84f5d8, type: 3}
   enemigo4: {fileID: 3426070780310640674, guid: 136212d09749646ce944f1493e203ca8, type: 3}
+  velocidad: 0
 --- !u!1 &1591761936
 GameObject:
   m_ObjectHideFlags: 0
