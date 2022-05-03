@@ -12,7 +12,7 @@ public class SliderLoading : MonoBehaviour
     void Start()
     {
         StartCoroutine(waiter());
-        SceneManager.LoadScene("Nivel1");
+        //SceneManager.LoadScene("Nivel1");
     }
 
     IEnumerator waiter()
