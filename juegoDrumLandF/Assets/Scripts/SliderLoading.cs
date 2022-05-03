@@ -12,7 +12,7 @@ public class SliderLoading : MonoBehaviour
     void Start()
     {
         StartCoroutine(waiter());
-        
+        SceneManager.LoadScene("Nivel1");
     }
 
     IEnumerator waiter()
@@ -22,6 +22,7 @@ public class SliderLoading : MonoBehaviour
             yield return new WaitForSeconds(0.06f);
             mainSlider.value += 0.02f;
         }
+        
     }
     public void Jugar()
     {
