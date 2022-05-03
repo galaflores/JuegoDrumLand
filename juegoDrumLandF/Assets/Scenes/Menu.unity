@@ -710,6 +710,7 @@ GameObject:
   - component: {fileID: 1106312946}
   - component: {fileID: 1106312945}
   - component: {fileID: 1106312944}
+  - component: {fileID: 1106312947}
   m_Layer: 5
   m_Name: BtnAbout
   m_TagString: Untagged
@@ -781,7 +782,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1106312945}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106312947}
+        m_TargetAssemblyTypeName: LogicaCambio, Assembly-CSharp
+        m_MethodName: CambiarNivel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 14
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1106312945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,6 +833,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106312942}
   m_CullTransparentMesh: 1
+--- !u!114 &1106312947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106312942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2cabb6a6a3dd949a8798eb826d1108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pasarNivel: 0
+  indiceNivel: 0
 --- !u!1 &1292265385
 GameObject:
   m_ObjectHideFlags: 0
