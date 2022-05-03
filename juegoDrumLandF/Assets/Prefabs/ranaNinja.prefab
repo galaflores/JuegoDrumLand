@@ -119,7 +119,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1123127424646417490}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: bb360962046015c488d15c6e7a8b370a, type: 2}
+  m_Material: {fileID: 6200000, guid: 4be5ffebd67290a4db4823cda5930ced, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -168,11 +168,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c0cb2ecd6ea4497e82409e278c2e61a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velX: 0
   fuerzaSalto: 7
   velocidad: 5
   velocidadY: 10
   proyectil: {fileID: 0}
   eliminaBarra: {fileID: 0}
+  MuestaCanvas: {fileID: 0}
+  MuestraGANASTE: {fileID: 0}
 --- !u!1 &1123127425775987885
 GameObject:
   m_ObjectHideFlags: 0

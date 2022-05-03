@@ -89,6 +89,12 @@ public class MuevePersonaje : MonoBehaviour
 			eliminaBarra.gameObject.SetActive(false);
 			MuestaCanvas.gameObject.SetActive(true);
 
+			// Eliminar notas y ojos restantes
+			var clones = GameObject.FindGameObjectsWithTag("bloque");
+			foreach (var clone in clones)
+			{
+				Destroy(clone);
+			}
 		}
 
 	}

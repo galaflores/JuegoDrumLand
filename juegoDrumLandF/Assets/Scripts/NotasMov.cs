@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class notaMov : MonoBehaviour
+public class NotasMov: MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sprtRenderer;
 
-    public float rapidez = 1;
+    public float rapidez = 0;
 
     private bool tocar = false;
 
@@ -67,7 +67,7 @@ public class notaMov : MonoBehaviour
 
     private void DestruirProyectil(int p)
     {
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
         HUD.instance.ActualizarP(p);
     }
 }

@@ -5257,15 +5257,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 571
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6413083
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.z
@@ -90979,6 +90979,7 @@ Transform:
   - {fileID: 1774458039}
   - {fileID: 1019626284}
   - {fileID: 2027382827}
+  - {fileID: 1570822514}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -96637,7 +96638,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -96808,6 +96809,55 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1570822513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1570822514}
+  - component: {fileID: 1570822515}
+  m_Layer: 0
+  m_Name: Generador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1570822514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570822513}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.26, y: 2.69, z: -1.9488993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1171796108}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1570822515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570822513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4931aa3314966244db787c07d5d876d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nota: {fileID: 6970992654676306750, guid: 41055d86fcb314b438f01b62df2a1b0e, type: 3}
+  enemigo1: {fileID: 6845708133374004404, guid: cfbc56571e5e84159ba70ec385322f0e, type: 3}
+  enemigo2: {fileID: 1039041083631975014, guid: d58e567527c444ea8a9f2c7b9199d9a6, type: 3}
+  enemigo3: {fileID: 862613950930983522, guid: 4738b576bbb6c4776910d4036c84f5d8, type: 3}
+  enemigo4: {fileID: 3426070780310640674, guid: 136212d09749646ce944f1493e203ca8, type: 3}
 --- !u!1 &1591761936
 GameObject:
   m_ObjectHideFlags: 0
@@ -123360,7 +123410,7 @@ Transform:
   - {fileID: 2081414016}
   - {fileID: 1106789147}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2056849878
 GameObject:
@@ -124497,6 +124547,14 @@ PrefabInstance:
     - target: {fileID: 3508600417846243116, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508600417957366170, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
+      propertyPath: m_Radius
+      value: 15.498138
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508600417957366170, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
+      propertyPath: m_Offset.x
+      value: 14.998138
       objectReference: {fileID: 0}
     - target: {fileID: 4563267939280704745, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
       propertyPath: m_TagString

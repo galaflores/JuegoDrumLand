@@ -54,8 +54,8 @@ public class checaPunto : MonoBehaviour
             //Destroy(gameObject, 0.01f);
             //print("nota des" + gameObject.name);
 
-            Destroy(gameObject);
-            Destroy(ojo);
+            //Destroy(gameObject);
+            //Destroy(ojo);
         }
 
             
