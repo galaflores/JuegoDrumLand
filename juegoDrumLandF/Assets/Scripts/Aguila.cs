@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Aguila : MonoBehaviour
 {
+    public GameObject MuestraGANAS;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,6 +15,7 @@ public class Aguila : MonoBehaviour
             if (SaludAguila.instance.vidas == 0)
             {
                 Destroy(gameObject);
+                MuestraGANAS.gameObject.SetActive(true);
             }
         }
     }

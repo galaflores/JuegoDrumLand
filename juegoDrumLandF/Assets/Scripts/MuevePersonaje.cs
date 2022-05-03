@@ -19,6 +19,7 @@ public class MuevePersonaje : MonoBehaviour
 
 	public GameObject eliminaBarra;
 	public GameObject MuestaCanvas;
+	public GameObject MuestraGANASTE;
 
 	void Awake()
 	{
@@ -88,7 +89,7 @@ public class MuevePersonaje : MonoBehaviour
 			eliminaBarra.gameObject.SetActive(false);
 			MuestaCanvas.gameObject.SetActive(true);
 
-			Destroy(GameObject.FindWithTag("nota1"));
 		}
+
 	}
 }
