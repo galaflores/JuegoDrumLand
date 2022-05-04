@@ -34,7 +34,7 @@ public class PeleaJefe : MonoBehaviour
     {
         if (vidasJefe > 0)
         {
-            if (notasSeguidas == 20)
+            if (notasSeguidas == 15)
             {
                 magoTirado = true;
                 GeneraBloquesNE.instance.genera = false;
@@ -64,7 +64,9 @@ public class PeleaJefe : MonoBehaviour
             GeneraBloquesNE.instance.genera = false;
             magoTirado = true;
             muestraGanas.gameObject.SetActive(true);
-            PlayMusica3.instance.audioNivel.Stop();
+
+            // Enviar datos
+            DatosPartida.instance.RecolectaDatos();
 
         }
         

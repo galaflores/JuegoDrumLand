@@ -5,7 +5,7 @@ using UnityEngine;
 public class SaludPersonaje : MonoBehaviour
 {
     public int vidas = 3;
-    public int puntos = 1;
+    public int puntos = 0;
 
 
     public static SaludPersonaje instance;

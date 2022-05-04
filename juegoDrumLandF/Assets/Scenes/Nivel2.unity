@@ -2314,11 +2314,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.03
+      value: -5.32
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.57
+      value: -2.62
       objectReference: {fileID: 0}
     - target: {fileID: 1123127424646417494, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
       propertyPath: m_LocalPosition.z
@@ -83896,6 +83896,7 @@ GameObject:
   - component: {fileID: 1171796109}
   - component: {fileID: 1171796111}
   - component: {fileID: 1171796110}
+  - component: {fileID: 1171796112}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -84097,6 +84098,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioNivel: {fileID: 0}
+--- !u!114 &1171796112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171796105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf637de6d16c26e4a8bbc0b624293343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nivel: 2
+  tiempoNivel: 150
 --- !u!1 &1191189800
 GameObject:
   m_ObjectHideFlags: 0
@@ -99871,7 +99886,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.36627197, y: -0.01646185}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -99882,7 +99897,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.125, y: 2.1875}
+  m_Size: {x: 0.8820801, y: 2.0393434}
   m_EdgeRadius: 0
 --- !u!50 &1789249152
 Rigidbody2D:

@@ -18,6 +18,7 @@ public class NoToca : MonoBehaviour
         if (!toca && Input.GetKeyDown(KeyCode.L) && SaludPersonaje.instance.puntos > 0)
         {
             HUD.instance.ActualizarP(-1);
+            PeleaJefe.instance.notasSeguidas = 0;
         }
     }
 

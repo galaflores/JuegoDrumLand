@@ -17,6 +17,9 @@ public class GameOver : MonoBehaviour
             MuevePersonaje.instance.fuerzaSalto = 0;
 
             muestraPierdes.gameObject.SetActive(true);
+
+            // Enviar datos
+            DatosPartida.instance.RecolectaDatos();
         }
         
     }

@@ -28,6 +28,7 @@ public class MovNotasNube : MonoBehaviour
             DestruirProyectil(1);
             PeleaJefe.instance.notasSeguidas++;
         }
+        
 
 
     }

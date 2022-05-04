@@ -6,6 +6,8 @@ public class GameOverNubes : MonoBehaviour
 {
     public GameObject muestraPierdes;
 
+    private bool final = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +29,9 @@ public class GameOverNubes : MonoBehaviour
             MuevePersonajeNube.instance.fuerzaSalto = 0;
 
             muestraPierdes.gameObject.SetActive(true);
+
+            // Enviar datos
+            DatosPartida.instance.RecolectaDatos();
         }
 
     }

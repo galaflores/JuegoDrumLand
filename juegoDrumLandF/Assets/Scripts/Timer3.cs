@@ -6,10 +6,17 @@ using TMPro;
 
 public class Timer3 : MonoBehaviour
 {
+    public static Timer3 instance;
+
     public float segundos = 0;
     public bool timerIsRunning = false;
     public TextMeshProUGUI tiempo;
     public GameObject muestraPierdes;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {

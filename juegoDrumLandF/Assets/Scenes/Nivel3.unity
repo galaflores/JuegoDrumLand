@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 8323802}
   m_Layer: 0
   m_Name: FallarNota
-  m_TagString: Untagged
+  m_TagString: falla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,7 +150,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.30062914}
@@ -174,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8323801}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.78, y: 2.39, z: -8.383537}
+  m_LocalPosition: {x: -6.07, y: 2.39, z: -8.383537}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 401140386}
   - component: {fileID: 401140388}
   - component: {fileID: 401140389}
+  - component: {fileID: 401140390}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -454,6 +455,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioNivel: {fileID: 0}
   estado: 0
+--- !u!114 &401140390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401140382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf637de6d16c26e4a8bbc0b624293343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nivel: 3
+  tiempoNivel: 150
 --- !u!1 &470363671
 GameObject:
   m_ObjectHideFlags: 0

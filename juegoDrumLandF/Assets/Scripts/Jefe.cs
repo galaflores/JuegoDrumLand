@@ -18,6 +18,9 @@ public class Jefe : MonoBehaviour
                 Destroy(gameObject);
                 Timer.instance.timerIsRunning = false;
                 MuestraGANAS.gameObject.SetActive(true);
+
+                // Enviar datos
+                DatosPartida.instance.RecolectaDatos();
             }
         }
     }
