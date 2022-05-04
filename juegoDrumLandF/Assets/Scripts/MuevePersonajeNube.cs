@@ -19,6 +19,7 @@ public class MuevePersonajeNube : MonoBehaviour
 	public GameObject eliminaBarra;
 	public GameObject MuestaCanvas;
 	public GameObject MuestraGANASTE;
+	public AudioSource audioNivel;
 
 	void Awake()
 	{

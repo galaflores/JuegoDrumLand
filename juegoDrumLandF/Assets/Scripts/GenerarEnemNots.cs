@@ -14,6 +14,7 @@ public class GenerarEnemNots: MonoBehaviour
     public GameObject enemigo4;
 
     public float velocidad;
+    public float tempo;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class GenerarEnemNots: MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(tempo);
 
             if (Random.value < 0.5f && MuevePersonaje.instance.velX > 0.1)
             {

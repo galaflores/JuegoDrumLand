@@ -7,7 +7,8 @@ public class MuevePersonaje : MonoBehaviour
 	public static MuevePersonaje instance;
 	public float velX;
 
-	private Animator animator;
+	public Animator animator;
+
 	public float fuerzaSalto = 100f;
 	//private bool isGrounded = true;
 	private bool dobleSalto = false;
@@ -20,6 +21,9 @@ public class MuevePersonaje : MonoBehaviour
 	public GameObject eliminaBarra;
 	public GameObject MuestaCanvas;
 	public GameObject MuestraGANASTE;
+
+	public AudioSource audioNivel;
+
 
 	void Awake()
 	{

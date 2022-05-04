@@ -32,17 +32,9 @@ public class NotasMov: MonoBehaviour
         if (tocar && Input.GetKeyDown(KeyCode.L))
         {
             tocar = false;
-            //NoToca.instance.toca = false;
+            NoToca.instance.toca = false;
             DestruirProyectil(1);
         }
-        else
-        {
-            if (gameObject.transform.position.x + halfWidth < -Screen.width / 200)
-            {
-                DestruirProyectil(-1);
-            }
-        }
-
 
     }
 
@@ -51,7 +43,13 @@ public class NotasMov: MonoBehaviour
         if (collision.gameObject.CompareTag("barra"))
         {
             tocar = true;
-            //NoToca.instance.toca = true;
+            NoToca.instance.toca = true;
+        }
+
+        if (collision.gameObject.CompareTag("salida"))
+        {
+            SaludPersonaje.instance.vidas--;
+            HUD.instance.ActualizarVidas();
         }
 
     }
@@ -61,7 +59,7 @@ public class NotasMov: MonoBehaviour
         if (collision.gameObject.CompareTag("barra"))
         {
             tocar = false;
-            //NoToca.instance.toca = false;
+            NoToca.instance.toca = false;
         }
 
     }
@@ -72,7 +70,6 @@ public class NotasMov: MonoBehaviour
         gameObject.transform.GetChild(0).gameObject.SetActive(true);
         // oculta la moneda
         sprtRenderer.enabled = false;
-        
    
         Destroy(transform.parent.gameObject, 0.3f);
         HUD.instance.ActualizarP(p);

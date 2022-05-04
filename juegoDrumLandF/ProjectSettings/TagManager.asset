@@ -12,6 +12,7 @@ TagManager:
   - Proyectil
   - enemy
   - bloque
+  - salida
   layers:
   - Default
   - TransparentFX
