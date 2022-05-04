@@ -81,7 +81,7 @@ public class MuevePersonaje : MonoBehaviour
 		}
 
 		//Disparar
-		if (Input.GetKeyDown(KeyCode.D))
+		if (Input.GetKeyDown(KeyCode.S))
 		{
 			GameObject nuevoProyectil = Instantiate(proyectil);
 			nuevoProyectil.transform.position = gameObject.transform.position;
