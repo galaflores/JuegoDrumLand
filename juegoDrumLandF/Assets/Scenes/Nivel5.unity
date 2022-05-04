@@ -699,6 +699,7 @@ GameObject:
   - component: {fileID: 536503332}
   - component: {fileID: 536503331}
   - component: {fileID: 536503335}
+  - component: {fileID: 536503336}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -810,6 +811,21 @@ MonoBehaviour:
   Corazon2: {fileID: 668370831}
   Corazon3: {fileID: 1005111382}
   txtMonedas: {fileID: 962069888}
+--- !u!114 &536503336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536503330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5e56b99be034537937bc30e0b9786f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  segundos: 360
+  timerIsRunning: 0
+  tiempo: {fileID: 2077004851}
 --- !u!1 &563326095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,7 +1599,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PTS
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e3449330e916e460099d5029da843d9f, type: 2}
   m_sharedMaterial: {fileID: 3185120280833347, guid: e3449330e916e460099d5029da843d9f, type: 2}
@@ -1610,8 +1626,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3768,7 +3784,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Time
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e3449330e916e460099d5029da843d9f, type: 2}
   m_sharedMaterial: {fileID: 3185120280833347, guid: e3449330e916e460099d5029da843d9f, type: 2}
@@ -3795,8 +3811,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
