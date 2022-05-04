@@ -2885,6 +2885,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &512443335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6011357906219590554, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+  m_PrefabInstance: {fileID: 2109295013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &512443336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512443335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5e56b99be034537937bc30e0b9786f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  segundos: 150
+  timerIsRunning: 0
+  tiempo: {fileID: 521865303}
+--- !u!114 &521865303 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6011357906567130053, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+  m_PrefabInstance: {fileID: 2109295013}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &535094197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112255,7 +112286,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6011357906567130052, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011357906567130053, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011357906567130053, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+      propertyPath: m_margin.x
+      value: -162.00085
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011357906567130053, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011357907180419732, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011357907180419732, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6011357907755545853, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
       propertyPath: m_SizeDelta.x
