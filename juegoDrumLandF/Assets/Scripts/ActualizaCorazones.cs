@@ -24,17 +24,29 @@ public class ActualizaCorazones : MonoBehaviour
     public void ActualizaVidasAguila()
     {
         int vidas = SaludAguila.instance.vidas;
-        switch (vidas)
+        //switch (vidas)
+        //{
+        //    case 2:
+        //        Corazon3.enabled = false;
+        //        break;
+        //    case 1:
+        //        Corazon2.enabled = false;
+        //        break;
+        //    case 0:
+        //        Corazon1.enabled = false;
+        //        break;
+        //}
+        if (vidas == 10)
         {
-            case 2:
-                Corazon3.enabled = false;
-                break;
-            case 1:
-                Corazon2.enabled = false;
-                break;
-            case 0:
-                Corazon1.enabled = false;
-                break;
+            Corazon3.enabled = false;
+        } 
+        else if (vidas == 5)
+        {
+            Corazon2.enabled = false;
+        }
+        else if (vidas == 0)
+        {
+            Corazon3.enabled = false;
         }
     }
 }

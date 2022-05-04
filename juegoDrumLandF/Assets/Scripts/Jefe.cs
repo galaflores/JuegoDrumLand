@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Aguila : MonoBehaviour
+public class Jefe : MonoBehaviour
 {
     public GameObject MuestraGANAS;
 
@@ -16,6 +16,7 @@ public class Aguila : MonoBehaviour
             if (SaludAguila.instance.vidas == 0)
             {
                 Destroy(gameObject);
+                Timer.instance.timerIsRunning = false;
                 MuestraGANAS.gameObject.SetActive(true);
             }
         }

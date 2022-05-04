@@ -2408,7 +2408,7 @@ GameObject:
   - component: {fileID: 604303053}
   m_Layer: 0
   m_Name: Pixilart Sprite Sheet_0 (1)
-  m_TagString: Untagged
+  m_TagString: jefe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2513,7 +2513,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.094756566, y: 0.018951654}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2524,7 +2524,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.25, y: 1.25}
+  m_Size: {x: 0.6245947, y: 0.98467684}
   m_EdgeRadius: 0
 --- !u!114 &604303053
 MonoBehaviour:
@@ -2916,7 +2916,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioNivel: {fileID: 697739402}
-  estado: 1
 --- !u!1001 &736623602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6397,7 +6396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95a252af23b4170448df0e64538ac161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 3
+  vidas: 20
 --- !u!1 &1713311120
 GameObject:
   m_ObjectHideFlags: 0
@@ -8108,6 +8107,7 @@ MonoBehaviour:
   segundos: 100
   timerIsRunning: 0
   tiempo: {fileID: 734078283815013588}
+  muestraPierdes: {fileID: 1522855809}
 --- !u!61 &862613950113996046
 BoxCollider2D:
   m_ObjectHideFlags: 0

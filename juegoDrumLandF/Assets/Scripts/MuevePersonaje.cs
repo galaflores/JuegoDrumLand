@@ -54,7 +54,6 @@ public class MuevePersonaje : MonoBehaviour
 		if (gameObject.transform.position.y < -6.5f)
         {
 			SaludPersonaje.instance.vidas = 0;
-			HUD.instance.ActualizarVidas();
         }
 
 		velX = GetComponent<Rigidbody2D>().velocity.x;

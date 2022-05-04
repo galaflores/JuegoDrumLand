@@ -15,6 +15,7 @@ TagManager:
   - salida
   - falla
   - mago
+  - jefe
   layers:
   - Default
   - TransparentFX

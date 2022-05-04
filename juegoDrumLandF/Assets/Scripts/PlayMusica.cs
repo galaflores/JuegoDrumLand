@@ -9,7 +9,7 @@ public class PlayMusica : MonoBehaviour
 
     public AudioSource audioNivel;
 
-    public bool estado = true;
+    private bool inicio = true;
 
 
     private void Awake()
@@ -24,27 +24,11 @@ public class PlayMusica : MonoBehaviour
 
     private void Update()
     {
-        if (estado && MuevePersonaje.instance.velX > 0)
+        if(inicio && Input.GetKeyDown(KeyCode.Space))
         {
-            PlayM();
-            estado = !estado;
+            audioNivel.Play();
+            inicio = false;
         }
-        else if (!estado && MuevePersonaje.instance.velX == 0)
-        {
-            PausaM();
-            estado = !estado;
-        }
-    }
-
-
-    private void PausaM()
-    {
-        audioNivel.Stop();
-    }
-
-    private void PlayM()
-    {
-        audioNivel.Play();
     }
 
 }

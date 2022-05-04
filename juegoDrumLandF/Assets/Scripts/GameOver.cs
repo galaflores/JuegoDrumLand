@@ -11,6 +11,7 @@ public class GameOver : MonoBehaviour
     {
         if (SaludPersonaje.instance.vidas == 0)
         {
+            Timer.instance.timerIsRunning = false;
             MuevePersonaje.instance.animator.SetBool("muerta", true);
             MuevePersonaje.instance.velocidad = 0;
             MuevePersonaje.instance.fuerzaSalto = 0;

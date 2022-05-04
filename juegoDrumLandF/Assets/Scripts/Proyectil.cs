@@ -26,4 +26,12 @@ public class Proyectil : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("jefe"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

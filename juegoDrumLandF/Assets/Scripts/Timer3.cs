@@ -4,25 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
-
-public class Timer : MonoBehaviour
+public class Timer3 : MonoBehaviour
 {
-    public static Timer instance;
-
     public float segundos = 0;
     public bool timerIsRunning = false;
     public TextMeshProUGUI tiempo;
     public GameObject muestraPierdes;
+
     private void Start()
     {
         // Starts the timer automatically
         timerIsRunning = true;
-    }
-
-    private void Awake()
-    {
-        instance = this;
     }
 
     void DisplayTime(float timeToDisplay)
@@ -43,16 +35,18 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                
+
                 segundos = 0;
                 timerIsRunning = false;
-                MuevePersonaje.instance.animator.SetBool("muerta", true);
-                MuevePersonaje.instance.velocidad = 0;
-                MuevePersonaje.instance.fuerzaSalto = 0;
+                MuevePersonajeNube.instance.animator.SetBool("muerta", true);
+                MuevePersonajeNube.instance.velocidad = 0;
+                MuevePersonajeNube.instance.fuerzaSalto = 0;
+
+                GeneraBloquesNE.instance.genera = false;
 
                 muestraPierdes.gameObject.SetActive(true);
             }
         }
     }
-    
+
 }
