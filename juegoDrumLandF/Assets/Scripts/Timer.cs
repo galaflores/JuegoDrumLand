@@ -11,10 +11,19 @@ public class Timer : MonoBehaviour
     public float segundos = 0;
     public bool timerIsRunning = false;
     public TextMeshProUGUI tiempo;
+    public GameObject muestraPierdes;
     private void Start()
     {
         // Starts the timer automatically
         timerIsRunning = true;
+    }
+
+    void DisplayTime(float timeToDisplay)
+    {
+        timeToDisplay += 1;
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        tiempo.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
     void Update()
     {
@@ -27,17 +36,16 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                Debug.Log("Time has run out!");
+                
                 segundos = 0;
                 timerIsRunning = false;
+                MuevePersonaje.instance.animator.SetBool("muerta", true);
+                MuevePersonaje.instance.velocidad = 0;
+                MuevePersonaje.instance.fuerzaSalto = 0;
+
+                muestraPierdes.gameObject.SetActive(true);
             }
         }
     }
-    void DisplayTime(float timeToDisplay)
-    {
-        timeToDisplay += 1;
-        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
-        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-        tiempo.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-    }
+    
 }
