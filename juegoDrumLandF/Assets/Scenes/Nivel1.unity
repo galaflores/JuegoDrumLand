@@ -1562,7 +1562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4859756295204067262, guid: f0aa8768b1963c940afd40d53bb2d885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 11
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4859756295757254155, guid: f0aa8768b1963c940afd40d53bb2d885, type: 3}
       propertyPath: m_Name
@@ -1855,7 +1855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pasarNivel: 0
-  indiceNivel: 0
+  indiceNivel: 3
 --- !u!1 &899883828
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,7 +2996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8603745645790805712, guid: d11284a011c6a2b4c85845bef2562d06, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8603745647384045411, guid: d11284a011c6a2b4c85845bef2562d06, type: 3}
       propertyPath: m_RootOrder
@@ -3759,7 +3759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pasarNivel: 0
-  indiceNivel: 0
+  indiceNivel: 6
 --- !u!1 &1997854427
 GameObject:
   m_ObjectHideFlags: 0
