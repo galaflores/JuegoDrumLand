@@ -15,10 +15,10 @@ public class MuevePersonajeNube : MonoBehaviour
 	public float velocidadY = 10f;
 
 	public GameObject proyectil;
-
 	public GameObject eliminaBarra;
 	public GameObject MuestaCanvas;
 	public GameObject MuestraGANASTE;
+
 	public AudioSource audioNivel;
 
 	void Awake()
@@ -31,6 +31,7 @@ public class MuevePersonajeNube : MonoBehaviour
 	{
 		if (corriendo)
 		{
+			GetComponent<Rigidbody2D>().velocity = new Vector2(0, GetComponent<Rigidbody2D>().velocity.y);
 			animator.SetFloat("velocidad", GetComponent<Rigidbody2D>().velocity.x);
 		}
 

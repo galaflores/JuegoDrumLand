@@ -23,7 +23,7 @@ public class ActualizaCorazones : MonoBehaviour
 
     public void ActualizaVidasAguila()
     {
-        int vidas = SaludAguila.instance.vidas;
+        int vidas = SaludJefe.instance.vidas;
         //switch (vidas)
         //{
         //    case 2:

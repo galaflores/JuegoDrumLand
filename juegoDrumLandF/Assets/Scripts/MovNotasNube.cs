@@ -42,10 +42,9 @@ public class MovNotasNube : MonoBehaviour
 
         if (collision.gameObject.CompareTag("salida"))
         {
-            PeleaJefe.instance.notasSeguidas = 0;
             SaludPersonaje.instance.vidas--;
             HUD.instance.ActualizarVidas();
-            PeleaJefe.instance.notasSeguidas = 0;
+            Destroy(gameObject);
         }
 
         if (collision.gameObject.CompareTag("falla"))

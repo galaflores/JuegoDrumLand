@@ -11,9 +11,9 @@ public class Jefe : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Proyectil"))
         {
-            SaludAguila.instance.vidas--;
+            SaludJefe.instance.vidas--;
             ActualizaCorazones.instance.ActualizaVidasAguila();
-            if (SaludAguila.instance.vidas == 0)
+            if (SaludJefe.instance.vidas == 0)
             {
                 Destroy(gameObject);
                 Timer.instance.timerIsRunning = false;

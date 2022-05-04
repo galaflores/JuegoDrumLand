@@ -219,6 +219,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &210704760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4859756295204067260, guid: f0aa8768b1963c940afd40d53bb2d885, type: 3}
+  m_PrefabInstance: {fileID: 526639118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &210704765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210704760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2cabb6a6a3dd949a8798eb826d1108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pasarNivel: 0
+  indiceNivel: 10
 --- !u!1 &401140382
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,6 +596,18 @@ PrefabInstance:
     - target: {fileID: 4859756295204067261, guid: f0aa8768b1963c940afd40d53bb2d885, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -382
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859756295204067262, guid: f0aa8768b1963c940afd40d53bb2d885, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 210704765}
+    - target: {fileID: 4859756295204067262, guid: f0aa8768b1963c940afd40d53bb2d885, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CambiarNivel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859756295204067262, guid: f0aa8768b1963c940afd40d53bb2d885, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4859756295325660199, guid: f0aa8768b1963c940afd40d53bb2d885, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1387,7 +1418,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785927207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.72, y: 2.79, z: -8.431763}
+  m_LocalPosition: {x: -10.02, y: 2.79, z: -8.431763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1871,8 +1902,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velX: 0
   animator: {fileID: 0}
-  fuerzaSalto: 10
-  velocidad: 1
+  fuerzaSalto: 8
+  velocidad: 5
   velocidadY: 10
   proyectil: {fileID: 8629770229423454943, guid: 14673160a53cc5a498136455d438b40c, type: 3}
   eliminaBarra: {fileID: 0}

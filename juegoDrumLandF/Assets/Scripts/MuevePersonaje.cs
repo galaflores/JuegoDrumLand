@@ -8,16 +8,13 @@ public class MuevePersonaje : MonoBehaviour
 	public float velX;
 
 	public Animator animator;
-
 	public float fuerzaSalto = 100f;
-	//private bool isGrounded = true;
 	private bool dobleSalto = false;
 	private bool corriendo = false;
 	public float velocidad = 1f;
 	public float velocidadY = 10f;
 
 	public GameObject proyectil;
-
 	public GameObject eliminaBarra;
 	public GameObject MuestaCanvas;
 	public GameObject MuestraGANASTE;
