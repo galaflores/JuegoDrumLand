@@ -34,7 +34,7 @@ public class PeleaJefe : MonoBehaviour
     {
         if (vidasJefe > 0)
         {
-            if (notasSeguidas == 10)
+            if (notasSeguidas == 15)
             {
                 magoTirado = true;
                 GeneraBloquesNE.instance.genera = false;
