@@ -112331,6 +112331,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6011357906219590554, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011357906219590556, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011357906219590556, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011357906219590556, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 6011357906219590558, guid: 405b5b8b01ab6f94b977ec86f643406b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -112710,6 +112726,18 @@ PrefabInstance:
     - target: {fileID: 3508600417738963475, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508600417738963487, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508600417738963487, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508600417738963487, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 3508600417846243106, guid: 0f3e482a28330204f9a1eba9030425db, type: 3}
       propertyPath: m_Name

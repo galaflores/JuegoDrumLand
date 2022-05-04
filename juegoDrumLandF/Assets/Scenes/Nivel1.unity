@@ -4023,6 +4023,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 734078284327274926, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 734078284327274926, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 734078284327274926, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 734078284517130743, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
       propertyPath: m_text
       value: 0
