@@ -3927,6 +3927,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 734078282518142671, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 734078282518142671, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 734078282518142671, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 734078282518142671, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 734078282518142671, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 139.61578
+      objectReference: {fileID: 0}
+    - target: {fileID: 734078282518142671, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -69.80789
+      objectReference: {fileID: 0}
     - target: {fileID: 734078283081765030, guid: 503af0ad2156a48b9b7355ccdd7253ea, type: 3}
       propertyPath: m_fontSize
       value: 80
