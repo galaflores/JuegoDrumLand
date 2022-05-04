@@ -51,6 +51,12 @@ public class MuevePersonaje : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		if (gameObject.transform.position.y < -6.5f)
+        {
+			SaludPersonaje.instance.vidas = 0;
+			HUD.instance.ActualizarVidas();
+        }
+
 		velX = GetComponent<Rigidbody2D>().velocity.x;
 
 		if (Input.GetKeyDown(KeyCode.Space))

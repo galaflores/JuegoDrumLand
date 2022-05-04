@@ -11,6 +11,17 @@ public class GameOverNubes : MonoBehaviour
     {
         if (SaludPersonaje.instance.vidas == 0)
         {
+            GeneraBloquesNE.instance.genera = false;
+
+            var clones = GameObject.FindGameObjectsWithTag("bloque");
+            foreach (var clone in clones)
+            {
+                if (clone.transform.position.x > -3)
+                {
+                    Destroy(clone);
+                }
+            }
+
             MuevePersonajeNube.instance.animator.SetBool("muerta", true);
             MuevePersonajeNube.instance.velocidad = 0;
             MuevePersonajeNube.instance.fuerzaSalto = 0;

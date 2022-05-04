@@ -19,6 +19,8 @@ public class GeneraBloquesNE : MonoBehaviour
 
     public bool genera = true;
 
+    public float tempo;
+
     private void Awake()
     {
         instance = this;
@@ -35,7 +37,7 @@ public class GeneraBloquesNE : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(tempo);
 
             if (Random.value < 0.5f && MuevePersonajeNube.instance.velX > 0.1 && genera)
             {
