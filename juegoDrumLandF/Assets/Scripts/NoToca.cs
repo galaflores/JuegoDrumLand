@@ -8,6 +8,8 @@ public class NoToca : MonoBehaviour
 
     public bool toca;
 
+    public int nivel;
+
     private void Awake()
     {
         instance = this;
@@ -18,10 +20,11 @@ public class NoToca : MonoBehaviour
         if (!toca && Input.GetKeyDown(KeyCode.L) && SaludPersonaje.instance.puntos > 0)
         {
             HUD.instance.ActualizarP(-1);
-            PeleaJefe.instance.notasSeguidas = 0;
+            if (nivel == 3)
+            {
+                PeleaJefe.instance.notasSeguidas = 0;
+            }
+
         }
     }
-
-
-
 }

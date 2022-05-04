@@ -31,6 +31,7 @@ public class Proyectil : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("jefe"))
         {
+        
             Destroy(gameObject);
         }
     }

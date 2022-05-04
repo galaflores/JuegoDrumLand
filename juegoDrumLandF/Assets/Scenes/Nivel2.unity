@@ -2352,6 +2352,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4809784356777800190, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e498979c762dd4aa893510fafaaf4e72, type: 3}
 --- !u!1001 &453578931
@@ -85149,7 +85153,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.2448666, y: 2.7362902}
+  m_Offset: {x: -2.2448666, y: 2.5239673}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -85160,7 +85164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5102668, y: 1.5274196}
+  m_Size: {x: 0.5102668, y: 1.9520652}
   m_EdgeRadius: 0
 --- !u!19719996 &1313619270
 TilemapCollider2D:

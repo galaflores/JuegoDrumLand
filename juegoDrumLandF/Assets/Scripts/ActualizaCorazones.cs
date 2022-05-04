@@ -6,7 +6,7 @@ using TMPro;
 
 public class ActualizaCorazones : MonoBehaviour
 {
-    //3 imágenes (corazones)
+    //3 im?genes (corazones)
     [SerializeField] //para accederlo desde unity
     private Image Corazon1;
     [SerializeField]
@@ -21,21 +21,10 @@ public class ActualizaCorazones : MonoBehaviour
         instance = this;
     }
 
-    public void ActualizaVidasAguila()
+    public void ActualizaVidasJefe()
     {
         int vidas = SaludJefe.instance.vidas;
-        //switch (vidas)
-        //{
-        //    case 2:
-        //        Corazon3.enabled = false;
-        //        break;
-        //    case 1:
-        //        Corazon2.enabled = false;
-        //        break;
-        //    case 0:
-        //        Corazon1.enabled = false;
-        //        break;
-        //}
+
         if (vidas == 10)
         {
             Corazon3.enabled = false;

@@ -34,7 +34,7 @@ public class PeleaJefe : MonoBehaviour
     {
         if (vidasJefe > 0)
         {
-            if (notasSeguidas == 15)
+            if (notasSeguidas == 10)
             {
                 magoTirado = true;
                 GeneraBloquesNE.instance.genera = false;
@@ -46,17 +46,16 @@ public class PeleaJefe : MonoBehaviour
                         Destroy(clone);
                     }
                 }
+            }
+            if (disparos == 0)
+            {
+                magoTirado = false;
+                disparos = 5;
+                vidasJefe--;
+                ActualizarVidasJefe();
+                notasSeguidas = 0;
+                GeneraBloquesNE.instance.genera = true;
 
-                if (disparos == 0)
-                {
-                    magoTirado = false;
-                    disparos = 5;
-                    vidasJefe--;
-                    ActualizarVidasJefe();
-                    notasSeguidas = 0;
-                    GeneraBloquesNE.instance.genera = true;
-
-                }
             }
         }
         else

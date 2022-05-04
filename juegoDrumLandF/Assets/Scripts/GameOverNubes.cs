@@ -6,8 +6,6 @@ public class GameOverNubes : MonoBehaviour
 {
     public GameObject muestraPierdes;
 
-    private bool final = false;
-
     // Update is called once per frame
     void Update()
     {

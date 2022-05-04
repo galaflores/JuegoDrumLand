@@ -12,7 +12,7 @@ public class Jefe : MonoBehaviour
         if (other.gameObject.CompareTag("Proyectil"))
         {
             SaludJefe.instance.vidas--;
-            ActualizaCorazones.instance.ActualizaVidasAguila();
+            ActualizaCorazones.instance.ActualizaVidasJefe();
             if (SaludJefe.instance.vidas == 0)
             {
                 Destroy(gameObject);

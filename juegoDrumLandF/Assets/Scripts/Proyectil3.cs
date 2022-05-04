@@ -31,7 +31,9 @@ public class Proyectil3: MonoBehaviour
     {
         if (collision.gameObject.CompareTag("mago") && PeleaJefe.instance.magoTirado)
         {
+            
             PeleaJefe.instance.disparos--;
+            print(PeleaJefe.instance.disparos);
             Destroy(gameObject);
         }
     }
