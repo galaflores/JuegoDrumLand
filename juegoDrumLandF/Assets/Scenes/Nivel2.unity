@@ -83897,6 +83897,7 @@ GameObject:
   - component: {fileID: 1171796111}
   - component: {fileID: 1171796110}
   - component: {fileID: 1171796112}
+  - component: {fileID: 1171796113}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -84111,7 +84112,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 2
+  puntos: 0
+  tiempoJugado: 0
   tiempoNivel: 150
+--- !u!114 &1171796113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171796105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62226f18dd9a17d4eb1934d02d2f7d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resultado: {fileID: 0}
+  textoUsuario: {fileID: 0}
+  textoPassword: {fileID: 0}
+  textoFirstName: {fileID: 0}
+  textoLastName: {fileID: 0}
+  textoCountry: {fileID: 0}
+  textDate: {fileID: 0}
+  sexUser: {fileID: 0}
 --- !u!1 &1191189800
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,8 +7,8 @@ public class DatosPartida : MonoBehaviour
     public static DatosPartida instance;
 
     public int nivel;
-    private int puntos;
-    private float tiempoJugado;
+    public int puntos;
+    public float tiempoJugado;
     public float tiempoNivel;
 
     private bool recolectados = false;

@@ -20,6 +20,7 @@ public class GameOver : MonoBehaviour
 
             // Enviar datos
             DatosPartida.instance.RecolectaDatos();
+            Redes.instance.registrarRanking();
         }
         
     }

@@ -21,6 +21,7 @@ public class Jefe : MonoBehaviour
 
                 // Enviar datos
                 DatosPartida.instance.RecolectaDatos();
+                Redes.instance.registrarRanking();
             }
         }
     }

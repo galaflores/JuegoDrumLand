@@ -32,6 +32,7 @@ public class GameOverNubes : MonoBehaviour
 
             // Enviar datos
             DatosPartida.instance.RecolectaDatos();
+            Redes.instance.registrarRanking();
         }
 
     }

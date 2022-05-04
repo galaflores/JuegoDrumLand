@@ -10,6 +10,12 @@ using UnityEngine.UI;
 // Poder hacer post requests a códigos php para ingresarlos a la base de datos
 public class Redes : MonoBehaviour
 {
+    public static Redes instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // texto de salida
     public TextMeshProUGUI resultado;
 
@@ -50,6 +56,14 @@ public class Redes : MonoBehaviour
         public static float segundosLogOff;
     }
 
+    public struct DatosRankingNoStatic
+    {
+        public string usuario;
+        public int nivel;
+        public int score;
+        public float tiempoJugado;
+    }
+
     //estructura para los datos del tiempo
     public struct DatosTiempoNoStatic
     {
@@ -61,6 +75,7 @@ public class Redes : MonoBehaviour
     public DatosUsuario datos;
     public DatosTiempoNoStatic tiempo;
     public DatosUsuarioRegistro datosRegistro;
+    public DatosRankingNoStatic ranking;
 
     // Para implementar en el botón de Log in
     public void LogIn()
@@ -186,5 +201,28 @@ public class Redes : MonoBehaviour
         forma.AddField("datosJSON", JsonUtility.ToJson(tiempo));
         UnityWebRequest request = UnityWebRequest.Post("https://drumland.azurewebsites.net/sendSessionDBDrumLand.php", forma);
         yield return request.SendWebRequest(); //Envia los datos al servidor
+    }
+
+    private bool recolectados = false;
+    public void registrarRanking()
+    {
+        StartCoroutine(registrarRankingCode());
+    }
+
+    private IEnumerator registrarRankingCode()
+    {
+        if (!recolectados)
+        {
+            ranking.usuario = DatosTiempo.usuario;
+            ranking.nivel = DatosPartida.instance.nivel;
+            ranking.score = DatosPartida.instance.puntos;
+            ranking.tiempoJugado = DatosPartida.instance.tiempoJugado;
+            recolectados = true;
+            print(JsonUtility.ToJson(ranking));
+            WWWForm forma = new WWWForm();
+            forma.AddField("datosJSON", JsonUtility.ToJson(ranking));
+            UnityWebRequest request = UnityWebRequest.Post("https://drumland.azurewebsites.net/sendRankingDBDrumLand.php", forma);
+            yield return request.SendWebRequest(); //Envia los datos al servidor
+        }
     }
 }

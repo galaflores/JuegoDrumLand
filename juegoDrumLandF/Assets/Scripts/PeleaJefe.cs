@@ -67,6 +67,7 @@ public class PeleaJefe : MonoBehaviour
 
             // Enviar datos
             DatosPartida.instance.RecolectaDatos();
+            Redes.instance.registrarRanking();
 
         }
         
