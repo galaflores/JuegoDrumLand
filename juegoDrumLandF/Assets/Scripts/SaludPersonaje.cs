@@ -7,6 +7,7 @@ public class SaludPersonaje : MonoBehaviour
     public int vidas = 3;
     public int puntos = 1;
 
+
     public static SaludPersonaje instance;
     // Start is called before the first frame update
     private void Awake()

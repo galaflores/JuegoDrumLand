@@ -18,6 +18,7 @@ public class HUD : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI txtMonedas;
 
+
     public static HUD instance;
 
     private void Awake()
