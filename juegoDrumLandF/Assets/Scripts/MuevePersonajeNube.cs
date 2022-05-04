@@ -7,7 +7,7 @@ public class MuevePersonajeNube : MonoBehaviour
 	public static MuevePersonajeNube instance;
 	public float velX;
 
-	private Animator animator;
+	public Animator animator;
 	public float fuerzaSalto = 100f;
 	private bool dobleSalto = false;
 	private bool corriendo = false;

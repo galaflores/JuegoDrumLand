@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GeneraBloquesNE : MonoBehaviour
 {
+    public static GeneraBloquesNE instance;
+
     private GameObject bloque;
 
     public GameObject nota;
@@ -13,7 +15,14 @@ public class GeneraBloquesNE : MonoBehaviour
     public GameObject enemigo3;
     public GameObject enemigo4;
 
-    public float repidez = 5;
+    public float rapidez = 5;
+
+    public bool genera = true;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +37,7 @@ public class GeneraBloquesNE : MonoBehaviour
         {
             yield return new WaitForSeconds(0.3f);
 
-            if (Random.value < 0.5f && MuevePersonajeNube.instance.velX > 0.1)
+            if (Random.value < 0.5f && MuevePersonajeNube.instance.velX > 0.1 && genera)
             {
                 // Generar bloque
                 GameObject nuevoBloque = Instantiate(bloque);
@@ -36,12 +45,13 @@ public class GeneraBloquesNE : MonoBehaviour
                 nuevoBloque.tag = "bloque";
                 Rigidbody2D bloqueRB = nuevoBloque.AddComponent<Rigidbody2D>();
                 bloqueRB.gravityScale = 0;
-                bloqueRB.velocity = new Vector2(-repidez, 0);
+                bloqueRB.velocity = new Vector2(-rapidez, 0);
 
                 // Generar nota
                 GameObject nuevaNota = Instantiate(nota);
                 nuevaNota.transform.parent = nuevoBloque.transform;
-                nuevaNota.transform.position = gameObject.transform.position + new Vector3(0, Random.Range(-0.2f, 0.2f), 0);
+                nuevaNota.transform.position = new Vector3(nuevoBloque.transform.position.x, nuevoBloque.transform.position.y, -1);
+                nuevaNota.transform.position += new Vector3(0, Random.Range(-0.2f, 0.2f), 0);
                 nuevaNota.SetActive(true);
 
                 // Generar enemigo
@@ -65,7 +75,8 @@ public class GeneraBloquesNE : MonoBehaviour
                 }
 
                 nuevoEnemigo.transform.parent = nuevoBloque.transform;
-                nuevoEnemigo.transform.position = gameObject.transform.position + new Vector3(0, -Random.Range(2f, 6f), 0);
+                nuevoEnemigo.transform.position = new Vector3(nuevoBloque.transform.position.x, nuevoBloque.transform.position.y, -1);
+                nuevoEnemigo.transform.position += new Vector3(0, -Random.Range(2f, 6f), 0);
                 nuevoEnemigo.SetActive(true);
             }
         }

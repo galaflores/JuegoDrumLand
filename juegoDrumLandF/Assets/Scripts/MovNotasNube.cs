@@ -8,14 +8,12 @@ public class MovNotasNube : MonoBehaviour
 
     private bool tocar = false;
 
-    private float halfWidth;
 
 
     // Start is called before the first frame update
     void Start()
     {
         sprtRenderer = GetComponent<SpriteRenderer>();
-        halfWidth = sprtRenderer.bounds.size.x / 2;
     }
 
 
@@ -25,16 +23,10 @@ public class MovNotasNube : MonoBehaviour
         if (tocar && Input.GetKeyDown(KeyCode.L))
         {
             tocar = false;
-            //NoToca.instance.toca = false;
+            NoToca.instance.toca = false;
 
             DestruirProyectil(1);
-        }
-        else
-        {
-            if (gameObject.transform.position.x + halfWidth < -Screen.width / 200)
-            {
-                DestruirProyectil(-1);
-            }
+            PeleaJefe.instance.notasSeguidas++;
         }
 
 
@@ -45,7 +37,19 @@ public class MovNotasNube : MonoBehaviour
         if (collision.gameObject.CompareTag("barra"))
         {
             tocar = true;
-            //NoToca.instance.toca = true;
+            NoToca.instance.toca = true;
+        }
+
+        if (collision.gameObject.CompareTag("salida"))
+        {
+            SaludPersonaje.instance.vidas--;
+            HUD.instance.ActualizarVidas();
+            PeleaJefe.instance.notasSeguidas = 0;
+        }
+
+        if (collision.gameObject.CompareTag("falla"))
+        {
+            PeleaJefe.instance.notasSeguidas = 0;
         }
 
     }
@@ -55,7 +59,7 @@ public class MovNotasNube : MonoBehaviour
         if (collision.gameObject.CompareTag("barra"))
         {
             tocar = false;
-            //NoToca.instance.toca = false;
+            NoToca.instance.toca = false;
         }
 
     }
